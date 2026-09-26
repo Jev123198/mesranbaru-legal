@@ -1,0 +1,9 @@
+# macOS Finder writes these into every folder it opens. They record window
+# and icon positions, nothing else, and have no business in a published
+# repository.
+.DS_Store
+._*
+
+# Editor and OS leftovers
+*.swp
+Thumbs.db
