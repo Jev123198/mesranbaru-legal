@@ -6,7 +6,7 @@
 <title>Kebijakan Privasi — Toko Mesran Baru Motor Sengkang</title>
 <meta name="description" content="Kebijakan Privasi aplikasi MesranBaru (com.jev123.MesranBaru) — Privacy Policy for the MesranBaru app.">
 <style>
-  :root { --blue:#144981; --ink:#17212b; --muted:#5b6b7a; --ground:#fbf8f2; --card:#fff; --line:#e2dbcf; }
+  :root { --blue:#3368A0; --ink:#17212b; --muted:#5b6b7a; --ground:#fbf8f2; --card:#fff; --line:#e2dbcf; }
   * { box-sizing:border-box; }
   body { margin:0; padding:0 16px 72px; background:var(--ground); color:var(--ink);
          font:16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
@@ -28,13 +28,30 @@
   a { color:var(--blue); }
   hr { border:0; border-top:1px solid var(--line); margin:48px 0 0; }
   footer { margin-top:40px; color:var(--muted); font-size:14px; }
+  table {
+            width: 100%;
+            border: 1px solid #000000;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #000000;
+        }
+
+        th {
+            color: #5c6b78;
+            font-weight: bold;
+        }
 </style>
 </head>
 <body>
 <header>
   <div style="text-align: center;">
     <h1>Kebijakan Privasi<br><span style="font-weight:400;font-size:19px">Privacy Policy</span></h1>
-    <p>Aplikasi MesranBaru — Toko Mesran Baru Motor Sengkang</p>
+    <p>Aplikasi MesranBaru <br> Toko Mesran Baru Motor Sengkang</p>
   </div>
 </header>
 
@@ -48,10 +65,17 @@
 </noscript>
 
 <p class="meta">
-  Berlaku sejak <strong><span data-toko="berlakuSejak"></span></strong> ·
-  Diperbarui <strong><span data-toko="diperbarui"></span></strong><br>
-  Aplikasi <strong>MesranBaru</strong> (<code>com.jev123.MesranBaru</code>)
+  Berlaku sejak <strong>
+    <span data-toko="berlakuSejak"></span>
+  </strong> ·
+
+  Diperbarui <strong>
+    <span data-toko="diperbarui"></span>
+  </strong>
+
+  Aplikasi <strong>MesranBaru</strong> 
 </p>
+
 <p class="meta"><a href="#english">English version below</a> · <a href="hapus-akun.html">Permintaan hapus akun</a></p>
 
 <div class="card">
@@ -71,6 +95,7 @@
   Kabupaten Wajo, Sulawesi Selatan. Kami pengendali data pribadi yang dijelaskan di sini,
   sesuai UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi.
 </p>
+
 <p class="meta">
   <span data-toko="alamat"></span><br>
   Email <a data-toko-email-link href="#"></a> · WhatsApp <a data-toko-wa-link href="#"></a>
@@ -80,13 +105,15 @@
   <h2>Kenapa aplikasi ini dibuat</h2>
   <p>
     Supaya pelanggan bisa memesan dari ponsel, dan toko bisa menyiapkan barangnya lebih cepat.
-    Begitu pesanan masuk, karyawan langsung mengambil dan mengemasnya — jadi saat pelanggan
+    Begitu pesanan masuk, karyawan langsung mengambil dan mengemasnya, jadi saat pelanggan
     sampai, barangnya sudah siap.
   </p>
+
   <p>
     Semua data di halaman ini dikumpulkan untuk itu saja: menerima pesanan, menyiapkan
     barangnya, dan menuliskan fakturnya. Tidak untuk iklan, tidak untuk dijual.
   </p>
+
 </div>
 
 <h2>Data yang kami kumpulkan</h2>
@@ -94,17 +121,63 @@
   Akun dibuatkan pemilik toko, jadi data awal Anda berasal dari catatan pelanggan toko,
   bukan dari formulir yang Anda isi.
 </p>
+
 <table>
-  <tr><th>Data</th><th>Wajib</th><th>Keterangan</th></tr>
-  <tr><td>ID akun &amp; kata sandi</td><td>Ya</td><td>Untuk masuk. Kata sandi disimpan teracak, tidak pernah dalam bentuk asli.</td></tr>
-  <tr><td>Nama lengkap</td><td>Ya</td><td>Menandai pesanan dan faktur Anda.</td></tr>
-  <tr><td>Nomor WhatsApp</td><td>Tidak</td><td>Agar toko bisa menghubungi Anda.</td></tr>
-  <tr><td>Email kontak</td><td>Tidak</td><td>Anda isi sendiri di Edit Profil, boleh dikosongkan.</td></tr>
-  <tr><td>Foto profil</td><td>Tidak</td><td>Bila kosong, digambar lingkaran polos.</td></tr>
-  <tr><td>Keranjang &amp; favorit</td><td>—</td><td>Muncul saat Anda memakainya.</td></tr>
-  <tr><td>Pesanan &amp; faktur</td><td>—</td><td>Produk, jumlah, tanggal, dan status. <strong>Tanpa nilai uang</strong> — aplikasi tidak memuat harga.</td></tr>
-  <tr><td>Token notifikasi</td><td>Tidak</td><td>Kode acak penanda perangkat. Dihapus saat Anda keluar.</td></tr>
+  <tr>
+    <th>Data</th>
+    <th>Wajib</th>
+    <th>Keterangan</th>
+  </tr>
+
+  <tr>
+    <td>ID akun &amp; kata sandi</td>
+    <td>Ya</td>
+    <td>Untuk masuk. Kata sandi disimpan teracak, tidak pernah dalam bentuk asli.</td>
+  </tr>
+
+  <tr>
+    <td>Nama lengkap</td>
+    <td>Ya</td>
+    <td>Menandai pesanan dan faktur Anda.</td>
+  </tr>
+
+  <tr>
+    <td>Nomor WhatsApp</td>
+    <td>Tidak</td>
+    <td>Agar toko bisa menghubungi Anda.</td>
+  </tr>
+
+  <tr>
+    <td>Email kontak</td>
+    <td>Tidak</td><td>Anda isi sendiri di Edit Profil, boleh dikosongkan.</td>
+  </tr>
+
+  <tr>
+    <td>Foto profil</td>
+    <td>Tidak</td>
+    <td>Bila kosong, digambar lingkaran polos.</td>
+  </tr>
+
+  <tr>
+    <td>Keranjang &amp; favorit</td>
+    <td>—</td>
+    <td>Muncul saat Anda memakainya.</td>
+  </tr>
+
+  <tr>
+    <td>Pesanan &amp; faktur</td>
+    <td>—</td>
+    <td>Produk, jumlah, tanggal, dan status. <strong>Tanpa nilai uang</strong> — aplikasi tidak memuat harga.</td>
+  </tr>
+
+  <tr>
+    <td>Token notifikasi</td>
+    <td>Tidak</td>
+    <td>Kode acak penanda perangkat. Dihapus saat Anda keluar.</td>
+  </tr>
+
 </table>
+
 <p>
   Sesi masuk disimpan di perangkat Anda. Penyedia server kami mencatat alamat IP dan waktu
   permintaan untuk keamanan. Akun toko juga dapat memotret foto produk dan mengunggah berkas
@@ -130,17 +203,17 @@ data kartu atau rekening, daftar aplikasi lain, dan data apa pun untuk iklan.</p
   <p><strong>Pelanggan lain tidak dapat melihat data Anda.</strong> Pembatasan ini dipasang di server (Row Level Security pada basis data), bukan hanya di tampilan aplikasi, sehingga tidak bisa ditembus dengan mengutak-atik aplikasi.</p>
 </div>
 <ul>
-  <li><strong>Anda</strong> — hanya profil, keranjang, favorit, pesanan, dan faktur milik Anda.</li>
-  <li><strong>Pelanggan lain</strong> — tidak ada sama sekali.</li>
-  <li><strong>Pemilik toko</strong> — data setiap pelanggan, sebagaimana toko mengetahuinya dari buku penjualannya.</li>
-  <li><strong>Tanpa akun</strong> — hanya katalog produk dan informasi toko.</li>
+  <li><strong>Anda</strong>, hanya profil, keranjang, favorit, pesanan, dan faktur milik Anda.</li>
+  <li><strong>Pelanggan lain</strong>, tidak ada sama sekali.</li>
+  <li><strong>Pemilik toko</strong>, data setiap pelanggan, sebagaimana toko mengetahuinya dari buku penjualannya.</li>
+  <li><strong>Tanpa akun</strong>, hanya katalog produk dan informasi toko.</li>
 </ul>
 
 <h2>Penyedia layanan</h2>
 <p>Kami tidak menjual dan tidak menukar data Anda. Kami hanya memakai:</p>
 <ul>
-  <li><strong>Supabase</strong> — basis data, autentikasi, penyimpanan berkas.</li>
-  <li><strong>Expo</strong> dan <strong>Google Firebase Cloud Messaging</strong> — pengiriman notifikasi.</li>
+  <li><strong>Supabase</strong> sebagai basis data, autentikasi, penyimpanan berkas.</li>
+  <li><strong>Expo</strong> dan <strong>Google Firebase Cloud Messaging</strong> sebagai pengiriman notifikasi.</li>
 </ul>
 <p>
   Mereka memproses data atas perintah kami dan tidak boleh memakainya untuk tujuan sendiri.
@@ -192,13 +265,13 @@ data kartu atau rekening, daftar aplikasi lain, dan data apa pun untuk iklan.</p
 <p class="meta">
   Effective <strong><span data-toko="berlakuSejak"></span></strong> ·
   Updated <strong><span data-toko="diperbarui"></span></strong> ·
-  <strong>MesranBaru</strong> (<code>com.jev123.MesranBaru</code>)
+  <strong>MesranBaru</strong>
 </p>
 
 <div class="card">
   <h2>At a glance</h2>
   <ul>
-    <li>For customers of Toko Mesran Baru Motor Sengkang only. The shop creates every account — there is no self sign-up.</li>
+    <li>For customers of Toko Mesran Baru Motor Sengkang only. The shop creates every account. There is no self sign-up.</li>
     <li>No ads, no trackers, no third-party analytics. We do not sell your data.</li>
     <li>No payments and no prices in the app. We store no card or bank details.</li>
     <li>Each customer can see only their own data.</li>
@@ -326,7 +399,7 @@ microphone, card or bank details, the list of your installed apps, or anything f
 </p>
 
 <footer>
-  <p>© 2026 Toko Mesran Baru Motor Sengkang · MesranBaru · com.jev123.MesranBaru</p>
+  <p>© 2026 Toko Mesran Baru Motor Sengkang · MesranBaru </p>
 </footer>
 
 </main>
