@@ -9,6 +9,9 @@ MesranBaru (`com.jev123.MesranBaru`), sebagaimana disyaratkan Google Play.
 | Kebijakan Privasi | https://jev123198.github.io/mesranbaru-legal/privacy-policy.html |
 | Hapus Akun | https://jev123198.github.io/mesranbaru-legal/hapus-akun.html |
 
+Halaman-halaman inilah yang dibaca Google dan pelanggan. **Tidak ada salinan
+lain di mana pun** — kalau ada yang perlu diubah, ubahnya di sini.
+
 ---
 
 ## Mau mengubah alamat, email, nomor WhatsApp, atau tanggal?
