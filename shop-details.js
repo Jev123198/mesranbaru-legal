@@ -29,7 +29,7 @@ var DETAIL_TOKO = {
   berlakuSejak: "25 September 2026",
 
   // Tanggal terakhir halaman ini diubah. Ganti setiap kali Anda mengubah isinya.
-  diperbarui: "25 September 2026",
+  diperbarui: "1 Oktober 2026",
 
 };
 

@@ -82,7 +82,7 @@
   <h2>Ringkasan</h2>
   <ul>
     <li>Khusus pelanggan Toko Mesran Baru Motor Sengkang. Akun dibuatkan toko, tidak ada pendaftaran sendiri.</li>
-    <li>Tidak ada iklan, pelacak, atau analitik pihak ketiga. Data Anda tidak dijual.</li>
+    <li>Tidak ada iklan. Aplikasi mencatat cara ia dipakai (lewat PostHog) untuk memperbaikinya. Data Anda tidak dijual.</li>
     <li>Tidak ada pembayaran dan tidak ada harga di aplikasi. Kami tidak menyimpan data kartu atau rekening.</li>
     <li>Setiap pelanggan hanya bisa melihat datanya sendiri.</li>
     <li>Kami tidak mengambil lokasi, kontak, SMS, atau kalender Anda.</li>
@@ -111,7 +111,7 @@
 
   <p>
     Semua data di halaman ini dikumpulkan untuk itu saja: menerima pesanan, menyiapkan
-    barangnya, dan menuliskan fakturnya. Tidak untuk iklan, tidak untuk dijual.
+    barangnya, menuliskan fakturnya, dan menjaga aplikasinya berjalan baik. Tidak untuk iklan, tidak untuk dijual.
   </p>
 
 </div>
@@ -176,6 +176,12 @@
     <td>Kode acak penanda perangkat. Dihapus saat Anda keluar.</td>
   </tr>
 
+  <tr>
+    <td>Catatan pemakaian aplikasi</td>
+    <td>—</td>
+    <td>Layar yang dibuka; produk yang dilihat, dimasukkan ke keranjang, atau difavoritkan; kata pencarian di Katalog; tindakan penting (misalnya pesanan terkirim); masuk dan keluar, termasuk percobaan masuk yang gagal (tanpa ID atau kata sandi yang diketik); tindakan yang gagal disimpan; jenis dan versi perangkat, versi aplikasi, dan laporan error. Dikirim dengan kode acak akun Anda dan peran akun (pelanggan atau toko), bukan dengan nama atau ID masuk; saat meninjaunya, toko dapat mencocokkan kode itu dengan profil Anda. Lokasi tidak diambil. Isi layar dan ketikan tidak direkam.</td>
+  </tr>
+
 </table>
 
 <p>
@@ -189,8 +195,10 @@ data kartu atau rekening, daftar aplikasi lain, dan data apa pun untuk iklan.</p
 <h2>Untuk apa dipakai</h2>
 <p>
   Menjalankan aplikasi dan mengelola akun Anda; menerima pesanan, menyiapkan barangnya, dan
-  menuliskan fakturnya; mengirim notifikasi tentang pesanan, faktur, dan produk baru; serta
-  menjaga keamanan akun. Notifikasi boleh Anda tolak atau matikan kapan saja — aplikasi tetap
+  menuliskan fakturnya; mengirim notifikasi tentang pesanan, faktur, dan produk baru; menjaga
+  keamanan akun dan mengenali kejadian yang tidak biasa, seperti percobaan masuk yang gagal
+  berulang kali; memahami bagian aplikasi mana yang dipakai atau bermasalah; serta menyusun
+  laporan penjualan toko. Notifikasi boleh Anda tolak atau matikan kapan saja — aplikasi tetap
   berjalan normal.
 </p>
 <p>
@@ -214,6 +222,7 @@ data kartu atau rekening, daftar aplikasi lain, dan data apa pun untuk iklan.</p
 <ul>
   <li><strong>Supabase</strong> sebagai basis data, autentikasi, penyimpanan berkas.</li>
   <li><strong>Expo</strong> dan <strong>Google Firebase Cloud Messaging</strong> sebagai pengiriman notifikasi.</li>
+  <li><strong>PostHog</strong> sebagai pencatat pemakaian aplikasi dan laporan error, serta tempat laporan toko. Untuk laporan itu, salinan catatan toko (profil, pesanan, faktur, keranjang, favorit, dan token notifikasi) juga disimpan di PostHog.</li>
 </ul>
 <p>
   Mereka memproses data atas perintah kami dan tidak boleh memakainya untuk tujuan sendiri.
@@ -226,6 +235,7 @@ data kartu atau rekening, daftar aplikasi lain, dan data apa pun untuk iklan.</p
   <li>Kata sandi disimpan teracak dan tidak dapat dibaca siapa pun, termasuk pemilik toko.</li>
   <li>Percobaan masuk dengan kata sandi salah berulang kali dikunci sementara.</li>
   <li>Profil, pesanan, dan faktur disimpan selama akun aktif; keranjang dan favorit sampai Anda menghapusnya.</li>
+  <li>Catatan pemakaian aplikasi dan salinan data di PostHog disimpan selama toko memakai layanan itu. Bila akun Anda dihapus, catatan pemakaian Anda di PostHog ikut dihapus otomatis, dan salinan data Anda hilang dari sana dalam beberapa jam.</li>
 </ul>
 <p>
   Tidak ada sistem yang kebal sepenuhnya. Bila terjadi kebocoran data pribadi, kami akan
@@ -272,7 +282,7 @@ data kartu atau rekening, daftar aplikasi lain, dan data apa pun untuk iklan.</p
   <h2>At a glance</h2>
   <ul>
     <li>For customers of Toko Mesran Baru Motor Sengkang only. The shop creates every account. There is no self sign-up.</li>
-    <li>No ads, no trackers, no third-party analytics. We do not sell your data.</li>
+    <li>No ads. The app records how it is used (through PostHog) so we can improve it. We do not sell your data.</li>
     <li>No payments and no prices in the app. We store no card or bank details.</li>
     <li>Each customer can see only their own data.</li>
     <li>We do not collect your location, contacts, SMS, or calendar.</li>
@@ -298,8 +308,8 @@ data kartu atau rekening, daftar aplikasi lain, dan data apa pun untuk iklan.</p
     reaches the shop, their parts are waiting.
   </p>
   <p>
-    Everything described here is collected for that alone: taking orders, preparing them, and
-    writing the invoice. Not for advertising, and not to be sold.
+    Everything described here is collected for that alone: taking orders, preparing them,
+    writing the invoice, and keeping the app working well. Not for advertising, and not to be sold.
   </p>
 </div>
 
@@ -318,6 +328,7 @@ data kartu atau rekening, daftar aplikasi lain, dan data apa pun untuk iklan.</p
   <tr><td>Cart &amp; favourites</td><td>—</td><td>Created as you use the app.</td></tr>
   <tr><td>Orders &amp; invoices</td><td>—</td><td>Products, quantities, dates, status. <strong>No monetary amounts</strong> — the app holds no prices.</td></tr>
   <tr><td>Push token</td><td>No</td><td>A random device identifier. Removed when you sign out.</td></tr>
+  <tr><td>App usage records</td><td>—</td><td>Screens opened; products viewed, added to the cart, or favourited; search terms in the Catalogue; key actions (such as an order being sent); sign-ins and sign-outs, including failed sign-in attempts (never the ID or password typed); actions that failed to save; device model and version, app version, and error reports. Sent with a random account code and the account's role (customer or shop), not with your name or sign-in ID; when reviewing them, the shop can match that code to your profile. No location is derived. Screen contents and what you type are not recorded.</td></tr>
 </table>
 <p>
   Your login session is kept on your device. Our hosting provider logs IP addresses and
@@ -330,7 +341,9 @@ microphone, card or bank details, the list of your installed apps, or anything f
 <h2>How we use it</h2>
 <p>
   To run the app and manage your account; to take orders, prepare them, and write invoices;
-  to send notifications about orders, invoices, and new products; and to keep accounts secure.
+  to send notifications about orders, invoices, and new products; to keep accounts secure and
+  spot unusual activity, such as repeated failed sign-in attempts; to understand which parts of
+  the app are used or failing; and to prepare the shop's sales reports.
   You may decline or disable notifications at any time. The app works normally without them.
 </p>
 <p>
@@ -354,6 +367,7 @@ microphone, card or bank details, the list of your installed apps, or anything f
 <ul>
   <li><strong>Supabase</strong>  [database, authentication, file storage.] </li>
   <li><strong>Expo</strong> and <strong>Google Firebase Cloud Messaging</strong> [notification delivery.]</li>
+  <li><strong>PostHog</strong>  [app usage analytics, error reports, and the shop's reporting. For those reports a copy of the shop's records (profiles, orders, invoices, carts, favourites, and notification tokens) is also kept in PostHog.]</li>
 </ul>
 <p>
   They process data on our instructions only and may not use it for their own purposes. Their
@@ -366,6 +380,7 @@ microphone, card or bank details, the list of your installed apps, or anything f
   <li>Passwords are stored hashed and cannot be read by anyone, including the shop owner.</li>
   <li>Repeated wrong-password attempts temporarily lock an account.</li>
   <li>Profile, orders, and invoices are kept while the account is active; cart and favourites until you remove them.</li>
+  <li>App usage records and the copy of data in PostHog are kept for as long as the shop uses that service. If your account is deleted, your app usage records in PostHog are erased automatically with it, and the copy of your data disappears from there within a few hours.</li>
 </ul>
 <p>
   No system is perfectly secure. If a personal data breach occurs, we will notify affected
