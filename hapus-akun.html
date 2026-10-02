@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Permintaan Hapus Akun — Aplikasi MesranBaru</title>
-<meta name="description" content="Cara meminta penghapusan akun dan data pada aplikasi MesranBaru — How to request account and data deletion.">
+<title>Permintaan Hapus Akun · Aplikasi MesranBaru</title>
+<meta name="description" content="Cara meminta penghapusan akun dan data pada aplikasi MesranBaru. How to request account and data deletion.">
 <style>
   :root { --blue:#3368A0; --ink:#17212b; --muted:#5b6b7a; --ground:#fbf8f2; --card:#fff; --line:#e2dbcf; --danger:#b3261e; }
   * { box-sizing:border-box; }
@@ -41,8 +41,8 @@
 
 <noscript>
   <div class="card">
-    <p><strong>Kontak toko tidak tampil?</strong> Halaman ini memuatnya lewat JavaScript. Aktifkan JavaScript, lalu muat ulang halaman.</p>
-    <p><em>Contact details missing? This page loads them with JavaScript. Please enable JavaScript and reload.</em></p>
+    <p><strong>Kontak toko tidak tampil?</strong> Halaman ini memuatnya melalui JavaScript. Silakan aktifkan JavaScript, lalu muat ulang halaman ini.</p>
+    <p><em>Contact details missing? This page loads them with JavaScript. Please enable JavaScript and reload the page.</em></p>
   </div>
 </noscript>
 
@@ -54,44 +54,45 @@
 
 <h2>Cara meminta penghapusan</h2>
 <p>
-  Akun dibuat oleh pemilik toko, bukan didaftarkan sendiri, jadi penghapusannya juga
-  dilakukan pemilik toko atas permintaan Anda. Permintaan ini gratis.
+  Akun dibuatkan oleh pemilik toko, bukan didaftarkan sendiri, sehingga penghapusannya juga
+  dilakukan oleh pemilik toko atas permintaan Anda. Permintaan ini tidak dikenai biaya.
 </p>
 <div class="card">
   <ul>
-    <li><strong>WhatsApp</strong> <a data-toko-wa-link href="#"></a> — paling cepat. Tulis: <em>“Saya ingin menghapus akun aplikasi MesranBaru saya. ID akun saya: […].”</em></li>
-    <li><strong>Email</strong> <a data-toko-email-link href="#"></a> dengan subjek <em>“Permintaan Hapus Akun MesranBaru”</em>, sertakan ID dan nama Anda.</li>
-    <li><strong>Datang langsung</strong> ke toko: <span data-toko="alamat"></span></li>
+    <li><strong>WhatsApp</strong> <a data-toko-wa-link href="#"></a>. Ini cara yang paling cepat. Anda dapat menulis: <em>“Saya ingin menghapus akun aplikasi MesranBaru saya. ID akun saya: […].”</em></li>
+    <li><strong>Email</strong> <a data-toko-email-link href="#"></a> dengan subjek <em>“Permintaan Hapus Akun MesranBaru”</em>. Mohon sertakan ID akun dan nama Anda.</li>
+    <li><strong>Datang langsung</strong> ke toko di <span data-toko="alamat"></span>.</li>
   </ul>
-  <p class="meta">Kami memastikan dulu permintaan berasal dari pemilik akun, misalnya dengan mencocokkan nama dan nomor WhatsApp yang tercatat.</p>
+  <p class="meta">Sebelum menghapus, kami akan memastikan bahwa permintaan tersebut memang berasal dari pemilik akun, misalnya dengan mencocokkan nama dan nomor WhatsApp yang tercatat.</p>
 </div>
 
 <div class="card warn">
   <h2>Penghapusan bersifat permanen</h2>
-  <p>Semua ini terhapus bersama akun dan <strong>tidak dapat dipulihkan</strong>: akun masuk (ID dan kata sandi), profil (nama, nomor telepon, email, serta foto profil bila toko pernah memasangnya), seluruh riwayat pesanan, seluruh faktur termasuk yang belum lunas, isi keranjang, daftar favorit, dan token notifikasi.</p>
-  <p>Catatan pemakaian aplikasi dan salinan data Anda di PostHog, layanan analitik yang kami pakai, ikut dihapus otomatis saat akun dihapus; salinan data hilang dari sana dalam beberapa jam.</p>
+  <p>Data berikut terhapus bersama akun dan <strong>tidak dapat dipulihkan</strong>: akun masuk (ID dan kata sandi), profil (nama, nomor telepon, email, serta foto profil apabila toko pernah memasangnya), seluruh riwayat pesanan, seluruh faktur termasuk yang belum lunas, isi keranjang, daftar favorit, dan token notifikasi.</p>
+  <p>Catatan pemakaian aplikasi dan salinan data Anda di PostHog, layanan analitik yang kami pakai, juga terhapus secara otomatis saat akun dihapus. Salinan data tersebut hilang dari PostHog dalam beberapa jam.</p>
 </div>
 
-<h2>Yang tetap disimpan</h2>
+<h2>Data yang tetap disimpan</h2>
 <ul>
-  <li><strong>Catatan penjualan di luar aplikasi</strong> (nota kertas dan pembukuan toko) — untuk kewajiban pembukuan dan pajak, sesuai ketentuan perpajakan yang berlaku.</li>
-  <li><strong>Catatan teknis server</strong> (alamat IP dan waktu akses) — untuk keamanan, maksimal 90 hari.</li>
+  <li><strong>Catatan penjualan di luar aplikasi</strong>, yaitu nota kertas dan pembukuan toko. Catatan ini kami simpan untuk memenuhi kewajiban pembukuan dan perpajakan sesuai ketentuan yang berlaku.</li>
+  <li><strong>Catatan teknis server</strong>, yaitu alamat IP dan waktu akses. Catatan ini disimpan untuk keperluan keamanan, paling lama 90 hari.</li>
 </ul>
-<p>Keduanya tidak lagi terhubung dengan akun aplikasi Anda setelah akun dihapus.</p>
+<p>Setelah akun dihapus, kedua catatan tersebut tidak lagi terhubung dengan akun aplikasi Anda.</p>
 
-<h2>Berapa lama</h2>
+<h2>Lama prosesnya</h2>
 <p>
-  Kami memproses paling lambat <strong>30 hari</strong> sejak permintaan diverifikasi, biasanya
-  jauh lebih cepat. Penghapusannya sendiri berlaku seketika dan permanen — tidak ada masa
-  tunggu dan tidak ada arsip cadangan. Setelah itu Anda tidak bisa masuk lagi; pemilik toko
-  dapat membuatkan akun baru, tetapi riwayat lama tidak bisa dikembalikan.
+  Kami memproses permintaan paling lambat <strong>30 hari</strong> sejak permintaan diverifikasi,
+  dan biasanya jauh lebih cepat. Penghapusan itu sendiri berlaku seketika dan permanen, tanpa masa
+  tunggu dan tanpa arsip cadangan. Setelah akun dihapus, Anda tidak dapat masuk lagi. Pemilik toko
+  dapat membuatkan akun baru, tetapi riwayat lama tidak dapat dikembalikan.
 </p>
 
-<h2>Menghapus sebagian saja</h2>
+<h2>Menghapus sebagian data</h2>
 <p>
-  Keranjang dan favorit dapat Anda kosongkan sendiri di aplikasi. Nomor telepon dan email
-  kontak dapat dikosongkan lewat <strong>Akun → Edit Profil</strong>. Token notifikasi terhapus
-  saat Anda keluar dari akun. Untuk permintaan lain, hubungi kami di atas.
+  Keranjang dan favorit dapat Anda kosongkan sendiri di aplikasi, sedangkan nomor telepon dan email
+  kontak dapat dikosongkan melalui <strong>Akun → Edit Profil</strong>. Token notifikasi terhapus
+  secara otomatis saat Anda keluar dari akun. Untuk permintaan lainnya, silakan hubungi kami melalui
+  kontak di atas.
 </p>
 
 <hr>
@@ -100,44 +101,44 @@
 
 <h2>How to request deletion</h2>
 <p>
-  Accounts are created by the shop owner rather than self-registered, so deletion is also
-  carried out by the shop owner at your request. There is no charge.
+  Accounts are created by the shop owner rather than registered by customers, so the shop owner also
+  carries out deletion at your request. There is no charge for this.
 </p>
 <div class="card">
   <ul>
-    <li><strong>WhatsApp</strong> <a data-toko-wa-link href="#"></a> — fastest. Message: <em>“I would like to delete my MesranBaru account. My account ID is […].”</em></li>
-    <li><strong>Email</strong> <a data-toko-email-link href="#"></a> with the subject <em>“Account Deletion Request MesranBaru”</em>, including your ID and name.</li>
-    <li><strong>Visit the shop</strong>: <span data-toko="alamat"></span></li>
+    <li><strong>WhatsApp</strong> <a data-toko-wa-link href="#"></a>. This is the fastest way. You can write: <em>“I would like to delete my MesranBaru account. My account ID is […].”</em></li>
+    <li><strong>Email</strong> <a data-toko-email-link href="#"></a> with the subject <em>“Account Deletion Request MesranBaru”</em>. Please include your account ID and name.</li>
+    <li><strong>Visit the shop</strong> at <span data-toko="alamat"></span>.</li>
   </ul>
-  <p class="meta">We first confirm the request comes from the account holder, for example by matching the name and WhatsApp number on the account.</p>
+  <p class="meta">Before deleting anything, we will confirm that the request comes from the account holder, for example by matching the name and WhatsApp number on record.</p>
 </div>
 
 <div class="card warn">
   <h2>Deletion is permanent</h2>
-  <p>All of this is erased with the account and <strong>cannot be recovered</strong>: the login (ID and password), the profile (name, phone, email, and a profile photo if the shop ever added one), the entire order history, every invoice including unpaid ones, cart contents, favourites, and push notification tokens.</p>
-  <p>Your app usage records and the copy of your data in PostHog, the analytics service we use, are erased automatically when the account is deleted; the copy disappears from there within a few hours.</p>
+  <p>The following is erased with the account and <strong>cannot be recovered</strong>: the login (ID and password), the profile (name, phone number, email, and a profile photo if the shop ever added one), the entire order history, every invoice including unpaid ones, cart contents, favourites, and push notification tokens.</p>
+  <p>Your app usage records and the copy of your data in PostHog, the analytics service we use, are also erased automatically when the account is deleted. The copy disappears from PostHog within a few hours.</p>
 </div>
 
 <h2>What is retained</h2>
 <ul>
-  <li><strong>Sales records kept outside the app</strong> (paper receipts and the shop ledger) — for bookkeeping and tax obligations, as required by applicable tax law.</li>
-  <li><strong>Server technical logs</strong> (IP address and access time) — for security, up to 90 days.</li>
+  <li><strong>Sales records kept outside the app</strong>, namely paper receipts and the shop's books. We keep these to meet our bookkeeping and tax obligations under applicable law.</li>
+  <li><strong>Server technical logs</strong>, namely IP addresses and access times. These are kept for security purposes for up to 90 days.</li>
 </ul>
-<p>Neither is linked to your app account once the account has been deleted.</p>
+<p>Once your account has been deleted, neither record is linked to your app account.</p>
 
 <h2>How long it takes</h2>
 <p>
-  We process requests within <strong>30 days</strong> of verification, usually much sooner. The
-  deletion itself is immediate and permanent, no waiting period, no recoverable archive.
-  Afterwards you can no longer sign in; the shop owner can create a new account, but the old
-  history cannot be restored.
+  We process requests within <strong>30 days</strong> of verifying them, and usually much sooner.
+  The deletion itself takes effect immediately and is permanent, with no waiting period and no backup
+  archive. Afterwards you will no longer be able to sign in. The shop owner can create a new account
+  for you, but your previous history cannot be restored.
 </p>
 
 <h2>Deleting only some data</h2>
 <p>
-  You can clear your cart and favourites yourself in the app, and clear your phone number and
-  contact email under <strong>Account → Edit Profile</strong>. Push tokens are removed when you
-  sign out. For anything else, contact us above.
+  You can clear your cart and favourites yourself in the app, and you can clear your phone number
+  and contact email under <strong>Account → Edit Profile</strong>. Push tokens are removed
+  automatically when you sign out. For any other request, please contact us using the details above.
 </p>
 
 <footer>
